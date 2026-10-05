@@ -1,0 +1,11 @@
+managed implementation in class zbp_i_flight_booking unique;
+strict ( 2 );
+
+define behavior for ZI_FlightBooking alias Booking
+persistent table zfb_booking
+lock master
+{
+  create;
+  update;
+  delete;
+}
