@@ -8,4 +8,11 @@ lock master
   create;
   update;
   delete;
+
+  validation validateFlightDate on save
+  {
+    field FlightDate;
+    create;
+    update;
+  }
 }
