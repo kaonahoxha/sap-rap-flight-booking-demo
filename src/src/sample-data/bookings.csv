@@ -1,0 +1,5 @@
+BookingId,PassengerName,FlightNumber,Origin,Destination,FlightDate,BookingStatus,TotalPrice,CurrencyCode
+0000000001,Anna Müller,LH400,FRA,JFK,2026-11-10,Confirmed,650.00,EUR
+0000000002,John Smith,LH123,MUC,LHR,2026-11-15,Pending,220.00,EUR
+0000000003,Elira Hoxha,LH171,TIA,FRA,2026-11-20,Confirmed,180.00,EUR
+0000000004,Marco Rossi,LH250,FCO,MUC,2026-11-25,Cancelled,195.00,EUR
