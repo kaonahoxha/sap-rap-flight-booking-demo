@@ -1,0 +1,31 @@
+@Metadata.layer: #CORE
+
+annotate view ZC_FlightBooking with
+{
+  @UI.lineItem: [{ position: 10 }]
+  BookingId;
+
+  @UI.lineItem: [{ position: 20 }]
+  PassengerName;
+
+  @UI.lineItem: [{ position: 30 }]
+  FlightNumber;
+
+  @UI.lineItem: [{ position: 40 }]
+  Origin;
+
+  @UI.lineItem: [{ position: 50 }]
+  Destination;
+
+  @UI.lineItem: [{ position: 60 }]
+  FlightDate;
+
+  @UI.lineItem: [{ position: 70 }]
+  BookingStatus;
+
+  @UI.lineItem: [{ position: 80 }]
+  TotalPrice;
+
+  @UI.lineItem: [{ position: 90 }]
+  CurrencyCode;
+}
