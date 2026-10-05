@@ -1,0 +1,17 @@
+@EndUserText.label: 'Flight Booking Projection'
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+
+define root view entity ZC_FlightBooking
+  provider contract transactional_query
+  as projection on ZI_FlightBooking
+{
+  key BookingId,
+      PassengerName,
+      FlightNumber,
+      Origin,
+      Destination,
+      FlightDate,
+      BookingStatus,
+      TotalPrice,
+      CurrencyCode
+}
