@@ -46,3 +46,29 @@ The application will allow users to:
 ## Status
 
 Work in progress.
+
+## Project Structure
+
+```text
+src/
+├── zfb_booking.ddls
+├── zi_flight_booking.ddls
+├── zi_flight_booking.bdef
+├── zc_flight_booking.ddls
+├── zc_flight_booking.bdef
+├── zui_flight_booking.srvd
+└── zc_flight_booking.metadata
+
+Database Table
+    ↓
+Interface CDS View
+    ↓
+RAP Behaviour
+    ↓
+Projection View
+    ↓
+Service Definition
+    ↓
+OData
+    ↓
+Fiori Elements UI
