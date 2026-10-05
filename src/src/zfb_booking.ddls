@@ -1,0 +1,22 @@
+@EndUserText.label : 'Flight Booking Table'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+
+define table zfb_booking {
+
+  key client         : abap.clnt not null;
+  key booking_id     : abap.numc(10) not null;
+
+  passenger_name     : abap.char(100);
+  flight_number      : abap.char(10);
+  origin             : abap.char(3);
+  destination        : abap.char(3);
+  flight_date        : abap.dats;
+  booking_status     : abap.char(20);
+
+  total_price        : abap.dec(10,2);
+  currency_code      : abap.cuky;
+
+}
