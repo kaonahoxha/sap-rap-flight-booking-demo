@@ -1,0 +1,17 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Flight Booking'
+@Metadata.allowExtensions: true
+
+define root view entity ZI_FlightBooking
+  as select from zfb_booking
+{
+  key booking_id      as BookingId,
+      passenger_name  as PassengerName,
+      flight_number   as FlightNumber,
+      origin           as Origin,
+      destination      as Destination,
+      flight_date      as FlightDate,
+      booking_status   as BookingStatus,
+      total_price      as TotalPrice,
+      currency_code    as CurrencyCode
+}
