@@ -33,7 +33,9 @@ The application will allow users to:
 - Update booking information
 - Delete a booking
 - Validate booking data
-
+- Validate flight dates before saving a booking
+- Reject bookings where the flight date is in the past
+- 
 ## Technologies
 
 - SAP ABAP Cloud
