@@ -1,14 +1,26 @@
 @Metadata.layer: #CORE
 
+@UI: {
+  headerInfo: {
+    typeName: 'Flight Booking',
+    typeNamePlural: 'Flight Bookings',
+    title: { value: 'BookingId' },
+    description: { value: 'PassengerName' }
+  }
+}
+
 annotate view ZC_FlightBooking with
 {
-  @UI.lineItem: [{ position: 10 }]
+  @UI.lineItem: [{ position: 10, label: 'Booking ID' }]
+  @UI.identification: [{ position: 10 }]
   BookingId;
 
-  @UI.lineItem: [{ position: 20 }]
+  @UI.lineItem: [{ position: 20, label: 'Passenger' }]
+  @UI.identification: [{ position: 20 }]
   PassengerName;
 
-  @UI.lineItem: [{ position: 30 }]
+  @UI.lineItem: [{ position: 30, label: 'Flight' }]
+  @UI.identification: [{ position: 30 }]
   FlightNumber;
 
   @UI.lineItem: [{ position: 40 }]
@@ -17,13 +29,15 @@ annotate view ZC_FlightBooking with
   @UI.lineItem: [{ position: 50 }]
   Destination;
 
-  @UI.lineItem: [{ position: 60 }]
+  @UI.lineItem: [{ position: 60, label: 'Flight Date' }]
+  @UI.identification: [{ position: 40 }]
   FlightDate;
 
-  @UI.lineItem: [{ position: 70 }]
+  @UI.lineItem: [{ position: 70, label: 'Status' }]
   BookingStatus;
 
-  @UI.lineItem: [{ position: 80 }]
+  @UI.lineItem: [{ position: 80, label: 'Price' }]
+  @UI.identification: [{ position: 50 }]
   TotalPrice;
 
   @UI.lineItem: [{ position: 90 }]
